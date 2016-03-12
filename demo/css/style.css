@@ -1,0 +1,26 @@
+body {
+  padding: 2rem;
+  text-align: center;
+}
+
+.sorting-table {
+  margin: 0 auto 2rem;
+}
+.sorting-table td, .sorting-table th {
+  text-align: left;
+}
+.sorting-table th {
+  padding: 0.5rem 1rem;
+}
+.sorting-table th[data-sortKey] {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.sorting-table th svg {
+  margin-left: 0.25rem;
+  position: relative;
+  top: 3px;
+}
+.sorting-table td {
+  padding: 0.25rem 1rem;
+}
