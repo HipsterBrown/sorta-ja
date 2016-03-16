@@ -3,7 +3,7 @@ import tableMock from './utils/table-mock'
 import sorta from '../src/'
 
 tape('this works', (t) => {
-  t.plan(2)
+  t.plan(1)
   const table = tableMock()
   const sortaTable = sorta(table)
   table.querySelector('th').click()
@@ -14,5 +14,4 @@ tape('this works', (t) => {
 
   sortaTable.destroy()
   table.querySelector('th').click()
-  t.ok(true, 'passing test')
 })
